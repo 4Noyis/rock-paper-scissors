@@ -5,19 +5,13 @@ let computerScore=0;
 let totalRound=0;
 
 
-let playerSelection = ()=>{
-  let playerInput=prompt("rock paper scissors ?");
+const rock=document.getElementById("btn-rock");
+const paper=document.getElementById("btn-paper");
+const scissors=document.getElementById("btn-scissors");
 
-  if (playerInput==="rock"||playerInput==="Rock"||playerInput==="ROCK") {
-    return "rock"
-  }if (playerInput==="paper"||playerInput==="Paper"||playerInput==="PAPER") {
-    return "paper"
-  }if (playerInput==="scissors"||playerInput==="Scissors"||playerInput==="SCISSORS") {
-    return "scissors"
-  }else{
-    
-  }
-}
+
+
+
 
 let computerSelection =()=>{
   let random= Math.floor(Math.random() * 3);
@@ -63,8 +57,9 @@ function playRound(player,computer){
   console.log(totalRound);
   console.log("------------------------------------------");
   
-  
 }
 
 
-console.log("hello world");
+rock.addEventListener("click",function(){playRound("rock",computerSelection())})
+paper.addEventListener("click",function(){playRound("paper",computerSelection())})
+scissors.addEventListener("click",function(){playRound("scissors",computerSelection())})
