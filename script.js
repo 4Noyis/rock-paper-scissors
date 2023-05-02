@@ -66,10 +66,5 @@ function playRound(player,computer){
   
 }
 
-while (totalRound<5) {
-  
-  playRound(playerSelection(),computerSelection());
-  
-}
 
 console.log("hello world");
