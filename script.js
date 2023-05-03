@@ -68,18 +68,24 @@ function playRound(player,computer){
         
         playerScore+=1;
         computerScore+=1;
+
+        scoreDiv.innerHTML=`player: ${playerScore} computer: ${computerScore}`
         winnerDiv.innerHTML="<span>DRAW</span>"
   }if((player==="rock"&&computer==="scissors")||
       (player==="paper"&&computer==="rock")||
       (player==="scissors"&&computer==="paper")){
         console.log("PLAYER WIN THIS ROUND");
         playerScore+=1
+
+        scoreDiv.innerHTML=`player: ${playerScore} computer: ${computerScore}`
         winnerDiv.innerHTML="<span>PLAYER WIN THIS ROUND</span>"
   }if((player==="rock"&&computer==="paper")||
       (player==="paper"&&computer==="scissors")||
       (player==="scissors"&&computer==="rock")){
         console.log("COMPUTER WIN THIS ROUND");
         computerScore+=1
+
+        scoreDiv.innerHTML=`player: ${playerScore} computer: ${computerScore}`
         winnerDiv.innerHTML="<span>COMPUTER WIN THIS ROUND</span>"
       }
    
@@ -89,7 +95,7 @@ function playRound(player,computer){
   console.log("computerScore: "+computerScore);
   console.log(totalRound);
   console.log("------------------------------------------");
-  
+  totalRoundDiv.innerHTML=`<span>ROUND: ${totalRound}</span>`
   
 }
 
