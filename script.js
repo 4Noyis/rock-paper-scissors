@@ -33,7 +33,25 @@ let computerSelection =()=>{
 }
 
 
+
 function playRound(player,computer){
+  if(totalRound===5){
+    if(playerScore>computerScore){
+      alert("Player Wins");
+      location.reload();
+      return
+    }if(playerScore<computerScore){
+      alert("Computer Wins");
+      location.reload();
+      return
+    }if(playerScore===computerScore){
+      alert("Draw");
+      location.reload();
+      return
+    }
+    
+    
+  }
   totalRound+=1;
   computerDiv.classList.remove("scissors-img")
   computerDiv.classList.remove("paper-img")
