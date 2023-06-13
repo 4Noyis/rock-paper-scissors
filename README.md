@@ -1,3 +1,3 @@
 # rock-paper-scissors
 
-Odin project rock paper scissors project
+Live preview -> <a href="https://4noyis.github.io/rock-paper-scissors/">Demo</a>
